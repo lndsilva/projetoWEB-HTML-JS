@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autentica - HTML</title>
+  </head>
+  <body>
+    <h1>Autentica - HTML</h1>
+    <form action="" id="formulario">
+      <label for="usuario">Usuário</label>
+      <input
+        type="text"
+        id="usuario"
+        maxlength="30"
+        required
+        autofocus
+        autocomplete="off"
+      />
+      <label for="senha">Senha</label>
+      <input
+        type="password"
+        id="senha"
+        maxlength="30"
+        required
+        autocomplete="on"
+      />
+      <br />
+      <br />
+      <label for="tipo">Lista</label>
+      <select name="tipo" id="tipo">
+        <option value="adm">Administrador</option>
+        <option value="aln">Aluno</option>
+        <option value="pro">Professor</option>
+      </select>
+      <br />
+      <br />
+      <label for="escolhe">Escolha</label>
+      <br />
+      <input type="checkbox" name="area" class="area" value="hr" id="hr" />
+      <label for="hr">Hardware</label><br />
+      <input type="checkbox" name="area" class="area" value="sw" id="sw" />
+      <label for="sw">Software</label><br />
+      <input type="checkbox" name="area" class="area" value="rd" id="rd" />
+      <label for="rd">Redes</label><br />
+
+      <br />
+      <br />
+      <button type="button" onclick="autenticar()">Autenticar</button>
+      <button type="button" onclick="limparCampos()">Limpar</button>
+    </form>
+
+    <script src="js/autentica.js"></script>
+  </body>
+</html>
